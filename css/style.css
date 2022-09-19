@@ -11,6 +11,8 @@
 
     --dark-gray: #333333; 
 
+    /* Spaces */
+    --card-spaces: 1.2em;
  }
  
  /* RESET */
@@ -43,6 +45,20 @@ ul{
     color: inherit;
     text-decoration: none;
 }
+
+/* cards */
+.card{
+    margin-bottom: var(--card-spaces);
+    padding: 1.3rem;
+}
+
+.card-normal{
+    border-radius: 20px;
+}
+
+.card-wide{
+    border-radius: 40px;
+}
 /* /COMMON */
 
 /* HEADER */
@@ -71,16 +87,35 @@ header .desktop-menu{
 /* MAIN */
 /* Section:Info */
 #info{
-    margin-top: 6.25rem;
+    margin: 6.25rem 0 4rem;
 }
 
  #info .card{
     background-color: var(--light-blue);
-    margin-bottom: 1em;
-    border-radius: 20px;
-    padding: 1.3rem;
  }
 /* /Section:Info */
+
+/* Section:planning */
+#planning{
+    background-color: var(--purple);
+    padding: 3em 0;
+}
+
+.strategic{
+    margin-bottom: var(--card-spaces);
+    /* debug */
+    background-color: yellow;
+}
+
+.development{
+    background-color: white;
+}
+
+.planning-info{
+    /* debug */
+    background-color: red;
+}
+/* /Section:planning */
 
 /* /MAIN */
 
@@ -98,11 +133,11 @@ header .desktop-menu{
      }
      
      #info .card{ 
-        width: calc(100% / 3 - 1.2em * 2 / 3);
+        width: calc(100% / 3 - var(--card-spaces) * 2 / 3);
      }
 
      #info .card:first-child{
-        width: calc(100% / 3 * 2 - 1.2em / 3);
+        width: calc(100% / 3 * 2 - var(--card-spaces) / 3);
      }
      /* /Section:info */
      /* /MAIN */
@@ -141,12 +176,28 @@ header .desktop-menu{
 
     #info .card:first-child .card-info{
         width: 45%;
+        /* debug */
+        background-color: bisque;
     }
 
     #info .card:first-child .card-visual{
         width: 55%;
+        /* debug */
+        background-color: brown;
     }
     /* /Section:Info */
+
+    /* Section:planning */
+    #planning .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .strategic, .development{
+        width: calc(100% / 2 - 1em);
+    }
+    /* /Section:planning */
     /* /MAIN */
 
     /* /HEADER */
