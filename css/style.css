@@ -68,10 +68,44 @@ header .desktop-menu{
 }
 /* /HEADER */
 
+/* MAIN */
+/* Section:Info */
+#info{
+    margin-top: 6.25rem;
+}
+
+ #info .card{
+    background-color: var(--light-blue);
+    margin-bottom: 1em;
+    border-radius: 20px;
+    padding: 1.3rem;
+ }
+/* /Section:Info */
+
+/* /MAIN */
+
 /* MEDIA QUERY */
+
 /* TABLET */
 @media screen and (min-width:768px) {
-    
+
+    /* MAIN */
+    /* Section:info */
+     #info .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+     
+     #info .card{ 
+        width: calc(100% / 3 - 1.2em * 2 / 3);
+     }
+
+     #info .card:first-child{
+        width: calc(100% / 3 * 2 - 1.2em / 3);
+     }
+     /* /Section:info */
+     /* /MAIN */
 }
 
 /* DESKTOP */
@@ -98,6 +132,22 @@ header .desktop-menu{
         display: inline-block;
         margin-left: 1rem;
     }
+
+    /* MAIN */
+    /* Section:Info */
+    #info .card:first-child{
+        display: flex;
+    }
+
+    #info .card:first-child .card-info{
+        width: 45%;
+    }
+
+    #info .card:first-child .card-visual{
+        width: 55%;
+    }
+    /* /Section:Info */
+    /* /MAIN */
 
     /* /HEADER */
 }
