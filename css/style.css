@@ -143,8 +143,20 @@ header .desktop-menu{
     text-align: center;
 }
 /* /Section:cta */
-
 /* /MAIN */
+
+/* FOOTER */
+footer{
+    background-color: var(--dark-gray);
+    color:white;
+    padding: var(--section-spaces) 0;
+    text-align: center;
+}
+
+.footer-top{
+    margin-bottom: var(--section-spaces);
+}
+/* /FOOTER */
 
 /* MEDIA QUERY */
 
@@ -207,12 +219,12 @@ header .desktop-menu{
       }
      /* /Section:About-us */
      
-     /* Section:cta */
-     #section-cta .container{
+     /* Section:cta + FOOTER */
+     #section-cta .container, footer .container{
         width: 50%;
         margin: 0 auto;
      }
-     /* /Section:cta */
+     /* /Section:cta + FOOTER*/
      /* /MAIN */
 }
 
@@ -279,9 +291,6 @@ header .desktop-menu{
      }
     /* /Section:Benefits */
 
-    /* Section:About-us */
-   
-    /* /Section:About-us */
     /* /MAIN */
 
     
