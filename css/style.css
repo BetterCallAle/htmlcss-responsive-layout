@@ -1,3 +1,17 @@
+ /* VARIABLES */
+ :root{
+
+    /* Colors */
+    --main-blue: #0084FD;
+    --light-blue: #B5DDFF; 
+
+    --purple: #9792E4;
+
+    --orange: #FDC15F;
+
+    --dark-gray: #333333;
+ }
+ 
  /* RESET */
  *{
     margin: 0;
