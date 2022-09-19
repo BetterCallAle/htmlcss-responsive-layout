@@ -138,6 +138,12 @@ header .desktop-menu{
 }
 /* /Section-Benefits */
 
+/* Section:cta */
+.cta{
+    text-align: center;
+}
+/* /Section:cta */
+
 /* /MAIN */
 
 /* MEDIA QUERY */
@@ -200,6 +206,13 @@ header .desktop-menu{
         display: flex;
       }
      /* /Section:About-us */
+     
+     /* Section:cta */
+     #section-cta .container{
+        width: 50%;
+        margin: 0 auto;
+     }
+     /* /Section:cta */
      /* /MAIN */
 }
 
@@ -227,6 +240,7 @@ header .desktop-menu{
         display: inline-block;
         margin-left: 1rem;
     }
+    /* /HEADER */
 
     /* MAIN */
     /* Section:Info */
@@ -270,5 +284,5 @@ header .desktop-menu{
     /* /Section:About-us */
     /* /MAIN */
 
-    /* /HEADER */
+    
 }
