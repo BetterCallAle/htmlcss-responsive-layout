@@ -194,6 +194,12 @@ header .desktop-menu{
         width: calc(100% / 2 - var(--card-spaces));
      }
      /* /Section:Benefits */
+
+      /* Section:About-us */
+      #about-us .row{
+        display: flex;
+      }
+     /* /Section:About-us */
      /* /MAIN */
 }
 
@@ -258,6 +264,10 @@ header .desktop-menu{
         width: calc(100% / 3 - var(--card-spaces));
      }
     /* /Section:Benefits */
+
+    /* Section:About-us */
+   
+    /* /Section:About-us */
     /* /MAIN */
 
     /* /HEADER */
