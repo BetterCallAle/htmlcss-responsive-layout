@@ -130,8 +130,13 @@ header .desktop-menu{
     /* debug */
     height: 100px;
 }
-
 /* /Section:Testimonials */
+
+/* Section-Benefits */
+#benefits .card{
+    background-color: white;
+}
+/* /Section-Benefits */
 
 /* /MAIN */
 
@@ -177,6 +182,18 @@ header .desktop-menu{
         background-color: blanchedalmond;
      }
      /* /Section:Testimonials */
+
+     /* Section:Benefits */
+     #benefits .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+
+     #benefits .card{
+        width: calc(100% / 2 - var(--card-spaces));
+     }
+     /* /Section:Benefits */
      /* /MAIN */
 }
 
@@ -235,6 +252,12 @@ header .desktop-menu{
         width: calc(100% / 2 - 1em);
     }
     /* /Section:planning */
+
+    /* Section:Benefits */
+    #benefits .card{
+        width: calc(100% / 3 - var(--card-spaces));
+     }
+    /* /Section:Benefits */
     /* /MAIN */
 
     /* /HEADER */
