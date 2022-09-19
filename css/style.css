@@ -42,6 +42,10 @@ ul{
     list-style-type: none;
 }
 
+h3{
+    margin-bottom: var(--card-spaces);
+}
+
 .inherit a{
     color: inherit;
     text-decoration: none;
@@ -58,7 +62,7 @@ section:nth-of-type(2n + 2){
 /* cards */
 .card{
     margin-bottom: var(--card-spaces);
-    padding: 1.3rem;
+    padding: 1.5rem;
 }
 
 .card-normal{
@@ -70,11 +74,18 @@ section:nth-of-type(2n + 2){
 }
 /* Buttons */
 .button{
-    border-radius: 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .cta-button{
     background-color: white;
+}
+
+.card-button{
+    color:white;
+    padding:  .4rem 2.8rem;
 }
 /* /COMMON */
 
@@ -117,9 +128,39 @@ header .button{
     margin-top: 7rem;
 }
 
- #info .card{
+#info .card{
     background-color: var(--light-blue);
- }
+}
+
+#info .card:first-child{
+    padding-bottom: 0;
+}
+
+.card-info{
+    text-align: center;
+}
+
+.card-info i{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+#info h3, .card-info i{
+   color: var(--main-blue);
+}
+
+#info p{
+    line-height: 1.7rem;
+}
+
+#info .card-left .button{
+    background-color: var(--main-blue);
+    margin: var(--card-spaces) 0;
+}
+
+#info .card-right img{
+    display: block;
+}
 /* /Section:Info */
 
 /* Section:planning */
@@ -206,10 +247,14 @@ footer{
      #info .card:first-child{
         width: calc(100% / 3 * 2 - var(--card-spaces) / 3);
      }
+
+     #info .card-right{
+        width: 45%;
+    }
      /* /Section:info */
 
      /* Section:Testimonials */
-     .card-img{
+     #testimonials .card-img{
         width: 15%;
         /* debug */
         background-color: orange;
@@ -282,17 +327,14 @@ footer{
         display: flex;
     }
 
-    #info .card:first-child .card-info{
-        width: 45%;
-        /* debug */
-        background-color: bisque;
+    #info .card-left{
+        width: 55%;
     }
 
-    #info .card:first-child .card-visual{
-        width: 55%;
-        /* debug */
-        background-color: brown;
+    #info .card-right{
+        align-self: flex-end;
     }
+
     /* /Section:Info */
 
     /* Section:planning */
