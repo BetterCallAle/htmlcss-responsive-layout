@@ -68,6 +68,14 @@ section:nth-of-type(2n + 2){
 .card-wide{
     border-radius: 40px;
 }
+/* Buttons */
+.button{
+    border-radius: 20px;
+}
+
+.cta-button{
+    background-color: white;
+}
 /* /COMMON */
 
 /* HEADER */
@@ -88,13 +96,27 @@ header .container{
     align-items: center;
 }
 
+header .mobile-menu{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 header .desktop-menu{
     display: none;
+}
+
+header .button{
+    color: black;
+    padding: .4rem .7rem;
 }
 /* /HEADER */
 
 /* MAIN */
 /* Section:Info */
+#info{
+    margin-top: 7rem;
+}
+
  #info .card{
     background-color: var(--light-blue);
  }
