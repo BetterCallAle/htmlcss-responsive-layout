@@ -34,8 +34,20 @@ img{
     max-width: 100%;
 }
 
+.round-img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .container{
     padding: 0 1.8rem
+}
+
+
+p{
+    line-height: 1.7rem;
 }
 
 ul{
@@ -52,7 +64,7 @@ h3{
 }
 
 section{
-    margin: var(--section-spaces) 0;
+    padding: var(--section-spaces) 0;
 }
 
 section:nth-of-type(2n + 2){
@@ -86,6 +98,7 @@ section:nth-of-type(2n + 2){
 .card-button{
     color:white;
     padding:  .4rem 2.8rem;
+    letter-spacing: .1rem;
 }
 /* /COMMON */
 
@@ -107,6 +120,10 @@ header .container{
     align-items: center;
 }
 
+header .logo img{
+    vertical-align: middle;
+}
+
 header .mobile-menu{
     font-size: 1.5rem;
     cursor: pointer;
@@ -125,7 +142,7 @@ header .button{
 /* MAIN */
 /* Section:Info */
 #info{
-    margin-top: 7rem;
+    padding-top: 7rem;
 }
 
 #info .card{
@@ -149,13 +166,11 @@ header .button{
    color: var(--main-blue);
 }
 
-#info p{
-    line-height: 1.7rem;
-}
-
 #info .card-left .button{
     background-color: var(--main-blue);
     margin: var(--card-spaces) 0;
+    font-weight: 700;
+    letter-spacing: ;
 }
 
 #info .card-right img{
@@ -164,34 +179,73 @@ header .button{
 /* /Section:Info */
 
 /* Section:planning */
-#planning{
-    background-color: var(--purple);
-    padding: 3em 0;
-}
-
 .strategic{
     margin-bottom: var(--card-spaces);
-    /* debug */
-    background-color: yellow;
+    color: white;
+}
+
+.strategic h3{
+    font-size: 1.8rem;
+}
+
+.strategic img{
+    margin-bottom: var(--section-spaces);
 }
 
 .development{
     background-color: white;
+    text-align: center;
 }
 
-.planning-info{
-    /* debug */
-    background-color: red;
+.planning-img{
+    margin-bottom: var(--card-spaces);
+}
+
+.arrow{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    line-height: 2.3rem;
+    font-size: .8rem;
+    text-align: center;
+    background-color: var(--purple);
+    margin-top: var(--card-spaces);
 }
 /* /Section:planning */
 
 /* Section:Testimonials */
+#testimonials{
+    text-align: center;
+}
+
+.testimonial-info h4{
+    font-weight: 100;
+    margin-bottom: var(--card-spaces);
+}
+
+.testimonial-info h3{
+    color: var(--purple);
+    font-size: 2rem;
+}
 
 #testimonials .card{
     background-color: var(--purple);
     margin: var(--card-spaces) 0;
-    /* debug */
-    height: 100px;
+}
+
+#testimonials .cwi{
+    color: white;
+}
+
+.card-txt p{
+    margin: var(--card-spaces) 0;
+}
+
+.card-txt p>span{
+    line-height: 0;
+    vertical-align: text-bottom;
+    font-size: 3rem;
 }
 /* /Section:Testimonials */
 
@@ -230,6 +284,11 @@ footer{
     .cwi{
         display: flex;
     }
+
+    .round-img{
+        width: 11rem;
+        height: 11rem;
+    }
     /* /COMMON */
 
     /* MAIN */
@@ -253,18 +312,24 @@ footer{
     }
      /* /Section:info */
 
+     /* Section:Planning */
+     .strategic h3{
+        font-size: 4rem;
+     }
+     /* /Section:Planning */
+
      /* Section:Testimonials */
-     #testimonials .card-img{
-        width: 15%;
-        /* debug */
-        background-color: orange;
+     #testimonials{
+        text-align: left;
      }
 
-     .card-txt{
-        padding-left: 1rem;
-        width: 85%;
-        /* debug */
-        background-color: blanchedalmond;
+     #testimonials .card-img{
+        width: 27%;
+     }
+
+     #testimonials .card-txt{
+        padding: 0 1rem;
+        width: 73%;
      }
      /* /Section:Testimonials */
 
@@ -300,7 +365,7 @@ footer{
     /* COMMON */
     .container{
         width: 70%;
-        max-width: 1000px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 0;
     }
@@ -346,6 +411,10 @@ footer{
 
     .strategic, .development{
         width: calc(100% / 2 - 1em);
+    }
+
+    .strategic h3{
+        font-size: 1.8rem;
     }
     /* /Section:planning */
 
