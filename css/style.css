@@ -570,6 +570,14 @@ footer{
         max-width: 255px;
     }
     /* /FOOTER */
+}
 
+/* LARGE DESKTOP */
+@media screen and (min-width: 1200px){
     
+    /* Common */
+    .container{
+        width: 80%;
+        max-width: 1000px;
+    }
 }
