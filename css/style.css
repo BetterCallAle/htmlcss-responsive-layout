@@ -277,6 +277,44 @@ header .button{
 }
 /* /Section-Benefits */
 
+/* Section:About-us */
+#about-us .card-txt h3{
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+#about-us .card-txt p{
+    margin-bottom: 2rem;
+}
+
+#about-us .card-img{
+    position: relative;
+    color: var(--purple);
+}
+
+#about-us .card-img span{
+    display: inline-block;
+    line-height: 0;
+    font-size: 8rem;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+}
+
+#about-us .card-img p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.linkedin{
+    background-color: var(--purple);
+    color: white;
+    padding: .3em 1em;
+    font-size: .8rem;
+}
+/* /Section:About-us */
+
 /* Section:cta */
 .cta{
     text-align: center;
@@ -371,9 +409,27 @@ footer{
      /* /Section:Benefits */
 
       /* Section:About-us */
+      #about-us{
+        padding: var(--section-spaces) 2.5rem;
+      }
+
       #about-us .row{
         display: flex;
+        justify-content: space-between;
       }
+
+      #about-us .card-txt{
+        width: 60%;
+      }
+
+      #about-us .card-img{
+        width: 30%;
+      }
+
+      #about-us .card-img span{
+        left: 7.5rem;
+      }
+
      /* /Section:About-us */
      
      /* Section:cta + FOOTER */
