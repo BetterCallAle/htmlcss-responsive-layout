@@ -11,6 +11,8 @@
 
     --dark-gray: #333333; 
 
+    --off-white: #C9C7F0;
+
     /* Spaces */
     --card-spaces: 1.2em;
     --section-spaces: 4rem;
@@ -35,8 +37,8 @@ img{
 }
 
 .round-img{
-    width:100px;
-    height: 100px;
+    width: 6.25em;
+    height: 6.25em;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -58,8 +60,11 @@ h3{
     margin-bottom: var(--card-spaces);
 }
 
-.inherit a{
+a{
     color: inherit;
+}
+
+.inherit a{
     text-decoration: none;
 }
 
@@ -318,6 +323,41 @@ header .button{
 /* Section:cta */
 .cta{
     text-align: center;
+    color: white;
+}
+
+.cta-top h4{
+    font-weight: 100;
+    color: var(--off-white);
+    font-size: .9rem;
+}
+
+.cta-top h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cta-bottom h2{
+    font-size: 3rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+
+.cta-bottom p{
+    font-size: .8rem;
+}
+
+.cta-bottom .button{
+    padding: .8rem 4rem;
+    background-color: white;
+    color: var(--purple);
+    border-radius: 50px;
+    margin: var(--card-spaces) 0;
+}
+
+.cta-bottom ul li{
+    display: inline-block;
+    font-size: .7rem;
 }
 /* /Section:cta */
 /* /MAIN */
@@ -328,10 +368,15 @@ footer{
     color:white;
     padding: var(--section-spaces) 0;
     text-align: center;
+    font-size: .6rem;
 }
 
 .footer-top{
     margin-bottom: var(--section-spaces);
+}
+
+.footer-bottom a {
+    color: var(--purple);
 }
 /* /FOOTER */
 
@@ -345,8 +390,8 @@ footer{
     }
 
     .round-img{
-        width: 11rem;
-        height: 11rem;
+        width: 11em;
+        height: 11em;
     }
     /* /COMMON */
 
@@ -432,13 +477,28 @@ footer{
 
      /* /Section:About-us */
      
-     /* Section:cta + FOOTER */
-     #section-cta .container, footer .container{
-        width: 50%;
+     /* Section:cta */
+     #section-cta .container{
+        width: 60%;
         margin: 0 auto;
+     }
+
+     .cta-top h3{
+        font-size: 2rem;
+     }
+
+     .cta-bottom{
+        padding: 0 1rem;
      }
      /* /Section:cta + FOOTER*/
      /* /MAIN */
+
+     /* FOOTER */
+     footer .container{
+        width: 43%;
+        margin: 0 auto;
+     }
+     /* /FOOTER */
 }
 
 /* DESKTOP */
@@ -501,11 +561,27 @@ footer{
 
     /* Section:Benefits */
     #benefits .card{
-        width: calc(100% / 3 - var(--card-spaces) / 3);
+        width: calc(100% / 3 - var(--card-spaces) * 2 / 3);
      }
     /* /Section:Benefits */
 
+    /* Section:Cta */
+    #section-cta .container{
+        width: 50%;
+        max-width: 508px;
+    }
+
+    .cta-bottom{
+        padding: 0 4rem;
+    }
+    /* /Section:Cta */
     /* /MAIN */
+
+    /* FOOTER */
+    footer .container{
+        max-width: 255px;
+    }
+    /* /FOOTER */
 
     
 }
