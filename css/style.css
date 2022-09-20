@@ -339,7 +339,6 @@ header .button{
 
 .cta-bottom .button{
     padding: .8rem 4rem;
-    background-color: white;
     color: var(--purple);
     border-radius: 50px;
     margin: var(--card-spaces) 0;
@@ -373,10 +372,6 @@ footer{
 @media screen and (min-width:768px) {
     
     /* COMMON */
-    .cwi{
-        display: flex;
-    }
-
     .round-img{
         width: 11em;
         height: 11em;
@@ -413,6 +408,10 @@ footer{
      /* Section:Testimonials */
      #testimonials{
         text-align: left;
+     }
+
+     #testimonials .card{
+        display: flex;
      }
 
      #testimonials .card-img{
